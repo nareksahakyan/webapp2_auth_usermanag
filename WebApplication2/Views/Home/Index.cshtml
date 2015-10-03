@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "";
+}
+
+@Html.Partial("_LoginPartial")
+    <h1>Home</h1>
+
+
+
+@foreach (var usr in ViewBag.users)
+{
+    @usr.UserName <br>
+}
+  
